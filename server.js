@@ -6,7 +6,7 @@ const db = require("./app/models")
 const Role = db.role
 
 var corsOptions = {
-    origin: "http://localhost:3000"
+    origin: "https://jwt-demo-steel.vercel.app"
 }
 
 
