@@ -1,11 +1,11 @@
 const APP_CONFIG =  require("./config.js")
 
 module.exports = {
-    HOST: APP_CONFIG.DB_HOST,
-    USER: APP_CONFIG.DB_USER,
-    PASSWORD: APP_CONFIG.DB_PASSWORD,
-    PORT: APP_CONFIG.DB_PORT,
-    DB: APP_CONFIG.DB_NAME,
+    HOST: 'containers-us-west-45.railway.app',
+    USER: 'root',
+    PASSWORD: '3Xhqq2qrBFDipYIg3EeN',
+    PORT: '6543',
+    DB: 'railway',
     dialect: "mysql",
     pool: {
         max: 5,
