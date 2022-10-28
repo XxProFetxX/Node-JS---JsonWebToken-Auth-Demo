@@ -1,3 +1,4 @@
+const APP_CONFIG = require("./app/config/config.js")
 const express = require("express")
 const cors = require("cors")
 const app = express()
@@ -43,7 +44,6 @@ function initial() {
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
 
-const PORT = process.env.PORT || 8080
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}.`)
+app.listen(APP_CONFIG.PORT, () => {
+    console.log(`Server is running on APP_CONFIG.PORT ${APP_CONFIG.PORT}.`)
 })

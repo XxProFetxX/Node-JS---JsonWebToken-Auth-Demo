@@ -1,8 +1,11 @@
+const APP_CONFIG =  require("./config.js")
+
 module.exports = {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD: "admin",
-    DB: "testdb",
+    HOST: APP_CONFIG.DB_HOST,
+    USER: APP_CONFIG.DB_USER,
+    PASSWORD: APP_CONFIG.DB_PASSWORD,
+    PORT: APP_CONFIG.DB_PORT,
+    DB: APP_CONFIG.DB_NAME,
     dialect: "mysql",
     pool: {
         max: 5,
